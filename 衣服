@@ -16,7 +16,7 @@ texts = []
 with open(file_path, newline='', encoding='utf-8') as csvfile:
     reader = csv.reader(csvfile)
     for row in reader:
-        text = row[0]  # 假設 CSV 的每一列只有一個文本內容
+        text = row[0]  
         texts.append(text)
 
 splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=0)
